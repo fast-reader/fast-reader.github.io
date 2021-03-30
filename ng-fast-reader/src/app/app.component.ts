@@ -22,7 +22,6 @@ export class AppComponent implements AfterViewInit {
     const interval: number = this.inForm.get('interval').value;
     const out: string[] = text.split(" ");
     let c: number = 0
-    debugger;
     while(c < out.length) {
       if(out.length === 1 && c === 0) {
         await this.sleep(interval * 1000);
