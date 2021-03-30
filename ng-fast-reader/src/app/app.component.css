@@ -12,6 +12,7 @@
     width: 100%;
     vertical-align: middle;
     text-align: center;
+    height: 290px;
 }
 
 #output {
@@ -93,4 +94,18 @@ a {
 .button-wrapper {
     display: flex;
     justify-content: end;
+}
+
+@media only screen and (max-width: 800px) {
+    #output {
+        font-size: 30px;
+        word-break: break-all;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #output {
+        font-size: 25px;
+        word-break: break-all;
+    }
 }
