@@ -2,7 +2,7 @@
   <div class="button-wrapper">
       <button [ngClass]="{'button-dark': darkModeOn,
           'button-light': !darkModeOn}" id="mode" (click)="toggleMode()">
-          Turn on Light Mode
+          {{ darkModeBanner }}
       </button>
   </div>
   <div id="main">

@@ -9,6 +9,7 @@ import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
 export class AppComponent implements AfterViewInit {
   output: string = 'ng-fast-reader';
   darkModeOn: boolean = true;
+  darkModeBanner: string = 'Turn on Light Mode';
 
   constructor(public fb: FormBuilder, private elementRef: ElementRef) { }
 
@@ -43,8 +44,10 @@ export class AppComponent implements AfterViewInit {
     this.darkModeOn = !this.darkModeOn;
     if(!this.darkModeOn) {
       this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'white';
+      this.darkModeBanner = 'Turn off Light Mode'
     } else {
       this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'black';
+      this.darkModeBanner = 'Turn on Light Mode'
     }
   }
 
