@@ -1,0 +1,96 @@
+.wrapper-dark {
+    color: white;
+    background-color: black;
+}
+
+.wrapper-light {
+    color: black;
+}
+
+#main {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#output {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+}
+
+#submit {
+    margin-top: 1em;
+}
+
+.input-dark {
+    width: 100%;
+    height: 3em;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.input-light {
+    width: 100%;
+    height: 3em;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.textarea-dark {
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.textarea-light {
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
+
+textarea:focus {
+    outline:none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-dark {
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button-light {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 100%;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: end;
+}
